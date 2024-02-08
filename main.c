@@ -1,22 +1,14 @@
 #include <stdio.h>
 #include <stdlib.h>
-
-int main()
-{
+int main() {
     int n;
-    printf("enter number of rows you want:");
-    scanf("%d",&n);
-    for(int i=1;i<=n;i++){
-        for(int j=1;j<=2*n-1;j++){
-            if(j>=n-(i-1)&&j<=n+(i-1)){
-                printf("*");
-            }
-            else
-            {
-              printf(" ");
-            }
-        }
-      printf("\n");
+    printf("Enter number of hours in a week\n");
+    scanf("%d", &n);
+    if (n >= 40) {
+        printf("Your salary is (50 * %d) = %d\n", n, (n * 50));
+    } else {
+        printf("Your salary = %f\n", (int)(n * 50 * 0.9));
     }
     return 0;
+
 }
