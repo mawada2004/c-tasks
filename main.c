@@ -1,14 +1,14 @@
 #include <stdio.h>
 #include <stdlib.h>
-int main() {
-    int n;
-    printf("Enter number of hours in a week\n");
-    scanf("%d", &n);
-    if (n >= 40) {
-        printf("Your salary is (50 * %d) = %d\n", n, (n * 50));
-    } else {
-        printf("Your salary = %f\n", (int)(n * 50 * 0.9));
-    }
-    return 0;
 
+int main()
+{
+    int x ;
+    printf("Enter a number\n");
+    scanf("%d",&x);
+    if(x%2==0)
+        printf("even number");
+    else
+        printf("odd number");
+    return 0;
 }
